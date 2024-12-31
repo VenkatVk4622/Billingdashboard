@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Billing Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #232f3e;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 1em;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #232f3e;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #232f3e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AWS Billing Dashboard</h1>
+        <p>Monitor Multiple AWS Accounts in INR and USD</p>
+    </header>
+    <div class="container">
+        <h2>Account Billing Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Account Name</th>
+                    <th>Billing (₹)</th>
+                    <th>Billing ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Account 1</td>
+                    <td>₹ 15,000</td>
+                    <td>$ 200</td>
+                </tr>
+                <tr>
+                    <td>Account 2</td>
+                    <td>₹ 25,000</td>
+                    <td>$ 300</td>
+                </tr>
+                <tr>
+                    <td>Account 3</td>
+                    <td>₹ 10,000</td>
+                    <td>$ 125</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2024 AWS Billing Dashboard. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
